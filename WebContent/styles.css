@@ -1,0 +1,673 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+
+/* reset CSS */
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,hr {margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th {font-size:1em; font-weight:normal; font-style:normal;}
+ul,ol {list-style:none;}
+fieldset,img,hr {border:none;}
+caption,th {text-align:left;}
+table {border-collapse:collapse; border-spacing:0;}
+td {vertical-align:top;}
+
+/* uses Google Fonts Arimo */
+.Helvetica {
+	font-family: 'Helvetica', 'Arial', 'Arimo', sans-serif;
+}
+
+/*
+color guide:
+- #FFF (White) Content background	
+- #444 (Dark gray) Header background = rgb(34, 34, 34)
+*/
+
+/* styles */
+body {
+	cursor:default;
+	min-width:980px;
+}
+
+#header {
+	width:auto;
+	height:auto;
+	padding:5px;
+	overflow:hidden;
+}
+
+#hNotifications {
+	width:auto;
+	height:85px;
+	font-family: 'Helvetica', 'Arial', 'Arimo', sans-serif;
+	color:rgb(34, 34, 34);
+	font-size:24px;
+	line-height:85px;
+	vertical-align:middle;
+	float:right;
+	margin-right:20px;
+}
+
+#hLogo {
+	width:420px;
+	height:85px;
+	float:left;
+}
+
+#menu {
+	width:auto;
+	height:auto;
+	padding:5px;
+	overflow:hidden;
+	background:rgb(34, 34, 34);
+}
+
+#mMenu {
+	width:auto;
+	height:auto;
+	font-family: 'Helvetica', 'Arial', 'Arimo', sans-serif;
+	color:#FFF;
+	font-size:14px;
+}
+
+ul {
+	list-style-type:none;
+}
+
+li {
+	float:left;
+	margin-left:40px;
+}
+
+ul a.selected {
+	background:#FFF;
+	padding:1px 10px 5px 10px;	
+	color:rgb(34, 34, 34);
+	font-weight:bold;
+}
+
+A {color:inherit; text-decoration:inherit;}
+
+#mUser {
+	width:auto;
+	height:auto;
+	font-family: 'Helvetica', 'Arial', 'Arimo', sans-serif;
+	color:#FFF;
+	font-size:14px;
+	float:right;
+	margin:0px 15px 0px 15px;
+}
+
+.info {
+	width:auto;
+	max-width:1584px;
+	height:auto;
+	padding:8px;
+	margin-right:auto;
+	margin-left:auto;
+	font-family: 'Helvetica', 'Arial', 'Arimo', sans-serif;
+	color:#C03; /*rgb(34, 34, 34);*/
+	font-size:14px;
+	text-align:center;
+	clear:both;
+}
+
+#canvasloader {
+	width:16px;
+	height:16px;
+	margin-left:15px;
+	margin-right:-12px;
+	margin-top:-3px;
+	float:left;
+}
+
+#bottom {
+	width:auto;
+	max-width:1584px;
+	height:auto;
+	padding:8px;
+	margin-top:20px;
+	margin-right:auto;
+	margin-left:auto;
+	font-family: 'Helvetica', 'Arial', 'Arimo', sans-serif;
+	color:rgb(34, 34, 34);
+	font-size:10px;
+	text-align:center;
+	clear:both;
+}
+
+#main {
+	width:auto;
+	max-width:1584px;
+	height:auto;
+	padding:8px;
+	margin-right:auto;
+	margin-left:auto;
+	font-family: 'Helvetica', 'Arial', 'Arimo', sans-serif;
+	color:rgb(34, 34, 34);
+	font-size:14px;
+	clear:both;
+}
+
+#mainleft {
+	width:65%;
+	height:auto;
+	min-width:627px;
+	overflow:hidden;
+	display:inline-block;
+	float:left;
+	vertical-align:baseline;
+	padding:12px 14px 12px 18px;
+}
+
+#mainright {
+	width:28%;
+	min-width:278px;
+	height:auto;
+	overflow:hidden;
+	display:inline-block;
+	float:right;
+	padding:12px;
+	background-color:rgb(249,249,249);
+	border:1px solid rgb(204,204,204);
+	border-radius:5px 5px 5px 5px;
+}
+
+table {
+	width:100%;
+	clear:both;
+}
+
+#attributes {
+	padding-bottom:20px;
+}
+
+.attributetitle {
+	font-size:16px;
+	font-weight:bold;
+	text-align:right;
+	padding:6px;
+}
+
+.attributecontent {
+	font-size:16px;
+	font-weight:normal;
+	padding:6px;
+}
+
+.superattribute {
+	font-size:16px;
+	font-weight:bold;
+	text-align:right;
+	padding:12px 0px 0px 0px;
+}
+	
+.tabletitle {
+	font-size:14px;
+	text-align:center;
+	padding:4px 2px 4px 2px;
+	background:rgb(34, 34, 34);
+	color:#FFF;
+}
+
+.tabletitlebig {
+	font-size:18px;
+	text-align:center;
+	padding:4px 2px 4px 2px;
+	background:rgb(34, 34, 34);
+	color:#FFF;
+}
+
+.tablecontentB {
+	font-size:12px;
+	text-align:center;
+	padding:6px 2px 6px 2px;
+	background:rgb(217,221,226);
+}	
+
+.tablemaincontentB {
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	padding:6px 2px 6px 2px;
+	background:rgb(217,221,226);
+	
+}
+
+.tablecontentA {
+	font-size:12px;
+	text-align:center;
+	padding:6px 2px 6px 2px;
+	background:rgb(236, 240, 244);
+	
+}	
+
+.tablemaincontentA {
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	padding:6px 2px 6px 2px;
+	background:rgb(236, 240, 244);
+}
+
+.tablecontentC {
+	font-size:14px;
+	text-align:center;
+	padding:6px 2px 6px 2px;
+	background:rgb(217,221,226);
+}	
+
+.tablemaincontentC {
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	padding:6px 2px 6px 2px;
+	background:rgb(217,221,226);
+	
+}
+
+.tablecontentD {
+	font-size:14px;
+	text-align:center;
+	padding:6px 2px 6px 2px;
+	background:rgb(236, 240, 244);
+	
+}	
+
+.tablemaincontentD {
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	padding:6px 2px 6px 2px;
+	background:rgb(236, 240, 244);
+}
+
+.tablesuper {
+	font-size:18px;
+	text-align:left;
+	padding:8px 2px 8px 2px;
+}
+
+.tablemargin {
+	width:30px;
+}
+
+.bluebox {
+	background-color:rgb(246, 249, 255);
+	border:1px solid rgb(236, 240, 244);
+	padding:8px;
+	margin:16px 0px 0px 0px;
+	border-radius:5px 5px 5px 5px;
+}
+
+.greybox {
+	padding:8px;
+	margin:16px 0px 0px 0px;
+	background-color:rgb(249,249,249);
+	border:1px solid rgb(204,204,204);
+	border-radius:5px 5px 5px 5px;
+}
+
+#budgetid {
+	font-weight: bold;
+}
+
+h1 {
+	font-weight:bold;
+	font-size:18px;
+	padding-bottom:8px;
+}
+
+h2 {
+	font-size:18px;
+	padding:4px 0px 4px 0px;
+}
+
+h3 {
+	font-size:18px;
+	padding:4px 0px 4px 0px;
+	display:inline;
+}
+
+h4 {
+	font-size:14px;
+	font-weight:bold;
+	padding:6px 0px 2px 0px;
+	text-align:right;
+}
+
+.hidden {
+	visibility:hidden;
+}
+
+summary {
+	padding-bottom:8px;
+}
+
+summary::-webkit-details-marker {
+	color:rgb(17, 85, 204);
+	margin-right:0px;
+}
+
+summary:focus {
+	outline-style: none;
+}
+
+.linktext {
+	color:rgb(17, 85, 204);
+	float:left;
+}
+
+.linkpointer {
+	color:rgb(17, 85, 204);
+	float:left;
+	cursor:pointer;
+}
+
+.rightlink {
+	color:rgb(17, 85, 204);
+	float:right;
+}
+
+.linetitleA {
+	display:inline-block;
+	width:100%;
+	line-height:24px;
+	font-size:14px;
+	margin:0px 0px 4px 0px;
+}
+
+.linetitleB {
+	display:inline-block;
+	width:100%;
+	line-height:24px;
+	font-size:14px;
+	margin:16px 0px 4px 0px;
+	padding-top:8px;
+	border-top:1px solid rgb(204,204,204);
+}
+
+.linetitleC {
+	display:inline-block;
+	width:100%;
+	line-height:24px;
+	font-size:14px;
+	margin:16px 0px 4px 0px;
+	padding-top:8px;
+	border-top:1px solid rgb(236, 240, 244);
+}
+
+.lefttext {
+	float:left;
+}
+
+.righttext {
+	float:right;
+}
+
+.linetext {
+	display:inline-block;
+	width:100%;
+	line-height:16px;
+	font-size:14px;
+	margin:2px 0px 2px 0px;
+}
+
+.imgbuttonbig {
+	width:24px;
+	height:24px;
+	cursor:pointer;
+}
+
+.imgbuttonsmall {
+	width:16px;
+	height:16px;
+	cursor:pointer;
+}
+
+.imgbuttonsmalldisabled {
+	width:16px;
+	height:16px;
+	visibility:hidden;
+}
+
+.image {
+	width:300px;
+	height:300px;
+	border:1px solid rgb(204,204,204);
+	border-radius:5px 5px 5px 5px;
+}
+
+.imgcover {
+	width:70px;
+	height:99px;
+	cursor:pointer;
+	border:1px solid rgb(204,204,204);
+	border-radius:5px 5px 5px 5px;
+}
+
+.selectedcover {
+	border:5px solid rgb(34, 34, 34);
+	border-radius:5px 5px 5px 5px;
+	width:70px;
+	height:99px;
+}
+
+.addnotetext {
+	width:95%;
+	min-width:95%;
+	max-width:95%;
+	height:64px;
+	min-height:64px;
+	border:1px solid rgb(204,204,204);
+	padding:8px;
+	margin:0px 0px 8px 0px;
+	border-radius:5px 5px 5px 5px;
+	display:inline-block;
+	line-height:16px;
+	font-size:14px;
+	font-family: 'Helvetica','Arial','Arimo',sans-serif;
+}
+
+.checkbox {
+	margin:6px;
+	width:16px;
+	height:16px;
+	cursor:pointer;
+}
+
+.textbox {
+	width:96%;
+	height:16px;
+	border:1px solid rgb(204,204,204);
+	padding:3px;
+	border-radius:5px 5px 5px 5px;
+	display:inline-block;
+	margin:1px 8px 0px 2px;
+	line-height:16px;
+	font-size:14px;
+	font-family: 'Helvetica','Arial','Arimo',sans-serif;
+}
+
+.sectiontextbox {
+	width:96%;
+	height:18px;
+	border:1px solid rgb(204,204,204);
+	padding:4px;
+	border-radius:5px 5px 5px 5px;
+	display:inline-block;
+	margin:1px 8px 0px 2px;
+	line-height:18px;
+	font-size:18px;
+	font-family: 'Helvetica','Arial','Arimo',sans-serif;
+}
+
+.bigtextbox {
+	width:96%;
+	height:102px;
+	border:1px solid rgb(204,204,204);
+	padding:4px;
+	border-radius:5px 5px 5px 5px;
+	display:inline-block;
+	margin:1px 8px 0px 2px;
+	line-height:16px;
+	font-size:14px;
+	font-family: 'Helvetica','Arial','Arimo',sans-serif;
+	resize: none;
+}
+
+.smalltextbox {
+	width:60px;
+	height:16px;
+	border:1px solid rgb(204,204,204);
+	padding:3px;
+	border-radius:5px 5px 5px 5px;
+	display:inline-block;
+	margin:-2px 8px -2px 2px;
+	line-height:16px;
+	font-size:14px;
+	text-align:center;
+	font-family: 'Helvetica','Arial','Arimo',sans-serif;
+}
+
+.fileSelector {
+	width:480px;
+	margin:8px;
+}
+
+.fileSelectorBtn {
+	margin:8px;
+	float:right;
+	visibility:hidden;
+}
+
+/* http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/ */
+.modalWindow {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 99999;
+	-webkit-transition: opacity 100ms ease-in;
+	-moz-transition: opacity 100ms ease-in;
+	transition: opacity 100ms ease-in;
+	pointer-events: none;
+	opacity:0;
+	-moz-box-shadow: inset 0px 0px 999999px 200px rgb(34, 34, 34);
+	-webkit-box-shadow: inset 0px 0px 999999px 200px rgb(34, 34, 34);
+	box-shadow: inset 0px 0px 999999px 200px rgb(34, 34, 34);
+	overflow:scroll;
+}
+
+.modalWindow:target {
+	opacity:1;
+	pointer-events:auto;
+}
+
+.modalWindow > div { /* modal window bluebox*/
+	width: 600px;
+	position: relative;
+	margin: 20% auto;
+	background-color:rgb(249,249,249);
+	border:1px solid rgb(204,204,204);
+	padding:8px;
+	border-radius:5px 5px 5px 5px;
+	-moz-box-shadow: 0px 0px 999999px 200px rgb(34, 34, 34);
+	-webkit-box-shadow: 0px 0px 999999px 200px rgb(34, 34, 34);
+	box-shadow: 0px 0px 999999px 200px rgb(34, 34, 34);
+}
+
+.closeModalWindow {
+	background: url(./images/cross.png);
+	background-size: 24px 24px;
+	position: absolute;
+	right: -12px;
+	top: -12px;
+	width: 24px;
+	height:24px;
+	cursor:pointer;
+	border-radius: 12px;
+	
+}
+
+/* http://www.catswhocode.com/blog/how-to-create-a-kick-ass-css3-progress-bar */
+
+.progress {
+	position: relative;
+	clear:both;
+	height: 18px;
+	padding:1px;
+	margin:8px;
+	background-color:rgb(236, 240, 244);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color:#FFFFFF;
+	text-align:right;
+	vertical-align:middle;
+	line-height:20px;
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #b6bcc6), color-stop(1, #9da5b0));
+	background: -moz-linear-gradient(#9da5b0 0%, #b6bcc6 100%);
+}
+
+.progress > p {
+	position: relative;
+	display: block;
+	overflow:visible;
+	height: 18px;
+	width:0%;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: rgb(17, 85, 204);
+	background-image: 
+			   -webkit-gradient(linear, 0 0, 100% 100%, 
+			      color-stop(.25, rgba(255, 255, 255, .2)), 
+			      color-stop(.25, transparent), color-stop(.5, transparent), 
+			      color-stop(.5, rgba(255, 255, 255, .2)), 
+			      color-stop(.75, rgba(255, 255, 255, .2)), 
+			      color-stop(.75, transparent), to(transparent)
+			   );
+			background-image: 
+				-moz-linear-gradient(
+				  -45deg, 
+			      rgba(255, 255, 255, .2) 25%, 
+			      transparent 25%, 
+			      transparent 50%, 
+			      rgba(255, 255, 255, .2) 50%, 
+			      rgba(255, 255, 255, .2) 75%, 
+			      transparent 75%, 
+			      transparent
+			   );
+			z-index: 1;
+			-webkit-background-size: 50px 50px;
+			-moz-background-size: 50px 50px;
+			background-size: 50px 50px;
+			-webkit-animation: move 2s linear infinite;
+			-moz-animation: move 2s linear infinite;
+	position: relative;
+	overflow: hidden;
+}
+
+.animate > p, .animate > p > p {
+			display: none;
+		}
+		
+		@-webkit-keyframes move {
+		    0% {
+		       background-position: 0 0;
+		    }
+		    100% {
+		       background-position: 50px 50px;
+		    }
+		}
+		
+		@-moz-keyframes move {
+		    0% {
+		       background-position: 0 0;
+		    }
+		    100% {
+		       background-position: 50px 50px;
+		    }
+		}
+
+
